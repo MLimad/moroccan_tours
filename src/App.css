@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+.container{
+    width: 999px;
+    margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+    background-color: cyan;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(28, 25, 25);
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header .line{
+    width: 78px;
+    height: 4px;
+    background-color: #9494d8;
+    border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+article{
+    position: relative;
+    width: 650px;
+    min-height: 500px;
+    background-color: white;
+    margin: 20px auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-img {
+	width: 100%;
+	height: 300px;
+	background-color: #000;
+    overflow: hidden;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.content {
+	width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-tour {
+    padding: 40px;
+}
+
+.text-tour h1{
+   
+        text-transform: capitalize;
+        color:rgb(28, 25, 25);
+        margin: 0 0 12px;
+    
+}
+
+.text-tour hr {
+	width: 80px;
+	margin: 0;
+	border: 1px solid #9494d8;
+}
+
+.text-tour p {
+	padding: 0;
+	margin: 12px 0;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+
+.heading-price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price {
+	font-size: 18px;
+	background-color: #9494d8;
+	color: white;
+	padding: 10px 20px;
+	font-weight: bold;
+}
+
+
+
+.read-more {
+	border: none;
+	text-transform: capitalize;
+	cursor: pointer;
+	color: blueviolet;
+	background-color: #132829;
+	color: white;
+	padding: 5px 10px;
+}
+
+
+.close-tour {
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+    position: absolute;
+	line-height: 1.6;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	top: 20px;
+	right: 20px;
+	color: rgb(51, 49, 53);
+    z-index: 10;
+    background-color: white;
+}
+
+
+.no-tour-left{
+	text-align: center;
+}
+
+.d-block{
+	display: block;
+}
+
+.d-none{
+	display: none;
+}
+
+.refresh-page {
+	padding: 10px 20px;
+	background: #9494d8;
+	color: white;
+	font-size: 18px;
+	border: 0;
+	outline: 0;
+	text-transform: capitalize;
+	border-radius: 30px;
+	cursor: pointer;
 }
